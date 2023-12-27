@@ -39,11 +39,11 @@
     - Use this endpoint to get all users.
     - **API Endpoint:** (GET) [http://localhost:3000/users/{id}](http://localhost:3000/users/{id})
     - Use this endpoint to get specific user.
-    - **API Endpoint:** (PATCH) [http://localhost:3000/users](http://localhost:3000/users)
+    - **API Endpoint:** (PATCH) [http://localhost:3000/users/{id}](http://localhost:3000/users/{id})
     - Use this endpoint to edit user.
-    - **API Endpoint:** (DELETE) [http://localhost:3000/users](http://localhost:3000/users)
+    - **API Endpoint:** (DELETE) [http://localhost:3000/users/{id}](http://localhost:3000/users/{id})
     - Use this endpoint to delete user.
-    - **API Endpoint:** (POST) [http://localhost:3000/users](http://localhost:3000/users)
+    - **API Endpoint:** (POST) [http://localhost:3000/users/{id}](http://localhost:3000/users/{id})
     - Use this endpoint to create user.
 
     **POSTMAN EXPRESS API:**
