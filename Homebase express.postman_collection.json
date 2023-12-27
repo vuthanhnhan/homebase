@@ -12,7 +12,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/api/v1/users/1",
+					"raw": "localhost:3000/api/v1/users/3",
 					"host": [
 						"localhost"
 					],
@@ -21,7 +21,7 @@
 						"api",
 						"v1",
 						"users",
-						"1"
+						"3"
 					]
 				}
 			},
@@ -34,7 +34,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"firstName\": \"nhan\",\r\n    \"lastName\": \"vu\",\r\n    \"age\": 10\r\n\r\n}",
+					"raw": "{\r\n    \"firstName\": \"thanh\",\r\n    \"lastName\": \"vu\",\r\n    \"age\": 10\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -78,41 +78,19 @@
 			"response": []
 		},
 		{
-			"name": "localhost:3000/api/v1/users/1",
+			"name": "edit user",
 			"request": {
 				"method": "PATCH",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"age\": 100\r\n}",
+					"raw": "{\r\n    \"age\": 200\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "localhost:5000/proxy/api/v1/users/3",
-					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"proxy",
-						"api",
-						"v1",
-						"users",
-						"3"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Delete user",
-			"request": {
-				"method": "DELETE",
-				"header": [],
 				"url": {
 					"raw": "localhost:3000/api/v1/users/2",
 					"host": [
@@ -124,6 +102,27 @@
 						"v1",
 						"users",
 						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/users/inf",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"inf"
 					]
 				}
 			},
