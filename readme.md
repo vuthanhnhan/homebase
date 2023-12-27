@@ -35,15 +35,15 @@
     - **Express Server URL:** [http://localhost:3000](http://localhost:3000)
 
 8. **Express API:**
-    - **API Endpoint:** (GET) [http://localhost:3000/users](http://localhost:3000/users)
+    - **API Endpoint:** (GET) [http://localhost:3000/api/v1/users](http://localhost:3000/api/v1/users)
     - Use this endpoint to get all users.
-    - **API Endpoint:** (GET) [http://localhost:3000/users/{id}](http://localhost:3000/users/{id})
+    - **API Endpoint:** (GET) [http://localhost:3000/api/v1/users/{id}](http://localhost:3000/api/v1/users/{id})
     - Use this endpoint to get specific user.
-    - **API Endpoint:** (PATCH) [http://localhost:3000/users/{id}](http://localhost:3000/users/{id})
+    - **API Endpoint:** (PATCH) [http://localhost:3000/api/v1/users/{id}](http://localhost:3000/api/v1/users/{id})
     - Use this endpoint to edit user.
-    - **API Endpoint:** (DELETE) [http://localhost:3000/users/{id}](http://localhost:3000/users/{id})
+    - **API Endpoint:** (DELETE) [http://localhost:3000/api/v1/users/{id}](http://localhost:3000/api/v1/users/{id})
     - Use this endpoint to delete user.
-    - **API Endpoint:** (POST) [http://localhost:3000/users/{id}](http://localhost:3000/users/{id})
+    - **API Endpoint:** (POST) [http://localhost:3000/api/v1/users/{id}](http://localhost:3000/api/v1/users/{id})
     - Use this endpoint to create user.
 
     **POSTMAN EXPRESS API:**
