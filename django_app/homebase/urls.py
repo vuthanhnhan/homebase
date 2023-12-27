@@ -5,5 +5,5 @@ urlpatterns = [
     # Add your existing URL patterns
 
     # Add a new URL pattern for fetching user data
-    path('', get_all_users, name='get_user_info'),
+    path('', get_all_users, name='get_all_users'),
 ]
