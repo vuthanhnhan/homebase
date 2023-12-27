@@ -1,0 +1,45 @@
+version: '3'
+services:
+  express:
+    image: node:16-alpine
+    container_name: homebase-express-app
+    working_dir: /app
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install --verbose && npm run prod"
+    volumes:
+      - ./express:/app
+    env_file:
+      - express/.env
+    
+
+  django_app:
+    image: python:3.9
+    container_name: homebase-django-app
+    working_dir: /app
+    ports:
+      - "8000:8000"
+    command: sh -c "pip install -r requirements.txt && python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./django_app:/app
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+      - PYTHONUNBUFFERED=1
+    env_file:
+      - django_app/.env
+    depends_on:
+      - proxy
+
+  proxy: 
+    image: python:3.9
+    container_name: proxy
+    working_dir: /app
+    ports:
+      - "5000:5000"
+    command: sh -c "pip install -r requirements.txt && python main.py"
+    volumes:
+      - ./proxy:/app
+    env_file:
+      - proxy/.env
+    depends_on:
+      - express
