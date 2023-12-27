@@ -29,7 +29,7 @@
 6. **Proxy Setup:**
     - The proxy is set up to redirect requests to the Express server.
     - **Proxy Endpoint:** [http://localhost:5000/api/v1](http://localhost:5000/api/v1)
-    - Requests to this endpoint will be redirected to the Express server.
+    - Requests to this endpoint will be redirected to the Express server example [http://localhost:5000/api/v1/users/3](http://localhost:5000/api/v1/users/3).
 
 7. **Express Server:**
     - **Express Server URL:** [http://localhost:3000](http://localhost:3000)
