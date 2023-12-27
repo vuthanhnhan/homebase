@@ -46,5 +46,9 @@
     - **API Endpoint:** (POST) [http://localhost:3000/users](http://localhost:3000/users)
     - Use this endpoint to create user.
 
+    **POSTMAN EXPRESS API:**
+    To test the API using Postman, you can import the following Postman collection:
+    [View Postman Collection](Homebase%20express.postman_collection.json)
+
 9. **Additional Notes:**
     - Ensure Docker is installed and running on your machine before running `docker-compose up`.
