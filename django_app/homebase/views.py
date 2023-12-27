@@ -14,6 +14,6 @@ def get_all_users(request):
             users = response.json()
             return JsonResponse({'users': users})
         else:
-            return JsonResponse({ 'success': False, 'error': 'Internal Server error'})
+            return JsonResponse({ 'success': False, 'error': 'Express Server error'})
     except requests.exceptions.RequestException as e:
         return JsonResponse({ 'success': False, 'error': 'Something error'})
